@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>The Bankist App</title>
+  </head>
+  <body>
+    <!-- SECTION NAVIGATION -->
+    <nav>
+      <p class="welcome">Log in to get started</p>
+      <img src="logo.png" alt="logo" class="logo" />
+      <form class="form_login">
+        <input
+          type="text"
+          placeholder="user"
+          class="login_input login_input--user"
+        />
+        <input
+          type="password"
+          placeholder="PIN"
+          maxlength="4"
+          class="login_input login_input--pin"
+        />
+        <button class="form_btn form_btn--login">&rarr;</button>
+      </form>
+    </nav>
+
+    <!-- SECTION APP -->
+    <main class="app">
+      <!-- balance -->
+      <div class="balance">
+        <div class="balance_label_box">
+          <p class="balance_label">Current balance</p>
+          <p class="balance_date_label">
+            As of<span class="balance_date">05/03/2022</span>
+          </p>
+        </div>
+        <p class="balance_value">3840$</p>
+      </div>
+
+      <!-- movements -->
+      <div class="movements">
+        <div class="movement_row">
+          <div>
+            <div class="movement_label movement_label--deposit">2 deposit</div>
+            <!-- <div class="movement_date">3 days ago</div> -->
+          </div>
+          <div class="movements_value">1300$</div>
+        </div>
+        <div class="movement_row">
+          <div>
+            <div class="movement_label movement_label--withdrawal">
+              1 withdrawal
+            </div>
+            <!-- <div class="movement_date">13/02/2022</div> -->
+          </div>
+          <div class="movements_value">740$</div>
+        </div>
+      </div>
+
+      <!-- Transfer Operation -->
+
+      <div class="operation operation_transfer">
+        <h2>Transfer money</h2>
+        <form class="form form-transfer">
+          <input type="text" class="form_input form_input--to" />
+          <input type="number" class="form_input form_input--amount" />
+          <button class="form_btn form_btn--transfer">&rarr;</button>
+          <label class="form_label">Transfer to</label>
+          <label class="form_label">Amount</label>
+        </form>
+      </div>
+
+      <!-- Loan Operation -->
+      <div class="operation operation_loan">
+        <h2>Request loan</h2>
+        <form class="form form-loan">
+          <input type="number" class="form_input form_input--loan" />
+          <button class="form_btn form_btn--loan">&rarr;</button>
+          <label for="amount" class="form_label">Amount</label>
+        </form>
+      </div>
+
+      <!-- Close Operation -->
+      <div class="operation operation_close">
+        <h2>Close account</h2>
+        <form class="form form-close">
+          <input type="text" class="form_input form_input--user" />
+          <input type="number" class="form_input form_input--pin" />
+          <button class="form_btn form_btn--close">&rarr;</button>
+          <label class="form_label">Confirm user</label>
+          <label class="form_label">Confirm PIN</label>
+        </form>
+      </div>
+
+      <!-- Summary -->
+      <div class="summary">
+        <p class="summary_label">in</p>
+        <span class="summary_value summary_value--in">5020$</span>
+        <p class="summary_label">out</p>
+        <span class="summary_value summary_value--out">5020$</span>
+        <p class="summary_label">interest</p>
+        <span class="summary_value summary_value--interest">5020$</span>
+        <button class="btn-sort">&downarrow; sort</button>
+      </div>
+
+      <!-- Logout timer -->
+      <p class="logout_timer">
+        You will be logged out in <span class="logout_time">05:00</span>
+      </p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--      login_input login_input--user -->
+<!--      login_input login_input--pin -->
+<!--      form_btn form_btn--login" -->
+<!--      form_btn form_btn--transfer -->
+<!--      form_btn form_btn--close -->
+<!--      form_input form_input--amount -->
+<!--      form_input form_input--to -->
+<!--      form_input form_input--user -->
+<!--      form_input form_input--pin -->
